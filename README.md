@@ -20,11 +20,18 @@ Quick summary of what the notebook does
   - Confusion matrix
 - Uses sklearn utilities such as train_test_split, Stratified folds are recommended for robust evaluation, and GridSearchCV for hyperparameter tuning.
 
-Why this README is specific to this repo
-- I read the notebook and dataset in your repo. I summarized the actual steps and functions used (imports and code cells show the exact preprocessing step of replacing zeros with medians, imports for models/metrics, and the notebook filename).
-- Links: you can open the notebook directly on GitHub:
-  - Notebook: https://github.com/anant1123/Diabetes-classification/blob/main/diabetes-classification.ipynb
-  - Data: https://github.com/anant1123/Diabetes-classification/blob/main/diabetes.csv
+## Results
+
+Replace the numbers below with the actual model evaluation results found in `diabetes-classification.ipynb`. If you want, I can extract these values from the notebook and update this file automatically — say "Extract metrics and update README".
+
+| Model | Test Accuracy | Precision | Recall | F1-score | ROC AUC |
+|-------|--------------:|----------:|-------:|---------:|--------:|
+| Logistic Regression | 0.76 | 0.74 | 0.65 | 0.69 | 0.81 |
+| Linear Discriminant Analysis (LDA) | 0.75 | 0.73 | 0.64 | 0.68 | 0.80 |
+
+Notes:
+- The table above shows example values. Please replace them with the exact numbers from your experiment.
+- Include confusion matrix and ROC curve images below (or link to notebook cells that display them).
 
 How to reproduce locally
 1. Clone the repo:
@@ -55,7 +62,7 @@ Notes, recommendations and next steps
   - Verifying that zeros are truly missing / invalid (based on domain knowledge).
   - Optionally imputing using KNNImputer or modeling-based imputation for improved fidelity.
 - Consider adding:
-  - A results section with final test metrics and plots (ROC, confusion matrix).
+  - A results section with final test metrics and plots (ROC, confusion matrix).  <-- Added above
   - A small `src/` folder with reusable functions (data loading, preprocessing, training) so results can be run programmatically (good for CI).
   - A `requirements.txt` and small `run.sh` or README section for Colab (Colab badge: https://colab.research.google.com/github/anant1123/Diabetes-classification/blob/main/diabetes-classification.ipynb).
 - If you want model-versioning or reproducible experiments, consider adding:
