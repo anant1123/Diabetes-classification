@@ -45,17 +45,7 @@ How to reproduce locally
    jupyter lab   # or jupyter notebook
 4. Open `diabetes-classification.ipynb` and run cells in order.
 
-Suggested requirements.txt (create or ask me to add)
-```
-numpy
-pandas
-matplotlib
-seaborn
-scikit-learn
-xgboost        # optional
-jupyterlab
-shap           # optional (for explainability)
-```
+
 
 Notes, recommendations and next steps
 - The notebook handles zero values by replacing them with the median — which is appropriate here, but consider:
@@ -64,13 +54,9 @@ Notes, recommendations and next steps
 - Consider adding:
   - A results section with final test metrics and plots (ROC, confusion matrix).  <-- Added above
   - A small `src/` folder with reusable functions (data loading, preprocessing, training) so results can be run programmatically (good for CI).
-  - A `requirements.txt` and small `run.sh` or README section for Colab (Colab badge: https://colab.research.google.com/github/anant1123/Diabetes-classification/blob/main/diabetes-classification.ipynb).
-- If you want model-versioning or reproducible experiments, consider adding:
-  - seed setting for numpy/sklearn and any frameworks used
-  - a small `experiments/` folder or a `results/` folder with exported model artifacts and plots
+  - A small `run.sh` or README section for Colab (Colab badge: https://colab.research.google.com/github/anant1123/Diabetes-classification/blob/main/diabetes-classification.ipynb).
 
-License
-- Add a LICENSE file (e.g., MIT) to clarify reuse permissions.
+
 
 Contact
 - Maintainer: @anant1123
